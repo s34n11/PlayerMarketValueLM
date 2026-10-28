@@ -29,7 +29,7 @@ players$contract_years_remaining <- as.numeric(expiration - reference_date) / 36
 players$versatility <- ifelse(
   is.na(players$foot),
   NA_integer_,
-  ifelse(players$foot == "Both", 1L, 0L)
+  ifelse(players$foot == "both", 1L, 0L)
 )
 
 
